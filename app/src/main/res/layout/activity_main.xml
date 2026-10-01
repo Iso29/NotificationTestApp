@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/permissionSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Notification Permission"
+        app:switchPadding="8dp"
+        app:trackTint="#0A240A"
+        app:thumbTintMode="multiply"
+        android:checked="true"
+        app:thumbTint="#149214"/>
+
+    <Button
+        android:id="@+id/showBasicNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Show Basic Notification"/>
+    <Button
+        android:id="@+id/showMessagingNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="show Messaging style"/>
+
+    <Button
+        android:id="@+id/customMessageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="show custom notification"/>
+
+    <Button
+        android:id="@+id/startSyncService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Start sync service"/>
+
+    <TextView
+        android:id="@+id/batteryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Battery: —"
+        android:textColor="#870A0A"/>
+</LinearLayout>
